@@ -54,3 +54,7 @@ h1 {
 .right.menu .item {
     border-right: gray 3px solid;
 }
+
+.ui.four.cards>.card {
+  width: calc(30% - 1em);
+}

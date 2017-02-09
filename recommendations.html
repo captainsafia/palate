@@ -1,27 +1,396 @@
 <!doctype html>
 <html lang="en">
-    <head>
-      <meta charset="utf-8">
-      <title>Palate</title>
-      <meta name="description" content="Discover your flavors">
-      <meta name="Team Rocket">
-      <link rel="stylesheet" href="./styles/semantic.min.css"/>
-      <link rel="stylesheet" href="./styles/style.css" />
-      <!--[if lt IE 9]>
+
+<head>
+    <meta charset="utf-8">
+    <title>Palate</title>
+    <meta name="description" content="Discover your flavors">
+    <meta name="Team Rocket">
+    <link rel="stylesheet" href="./styles/semantic.min.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/recommendations.css" />
+    <script src="./assets/jquery.min.js"></script>
+    <script src="./assets/semantic.min.js"></script>
+    <script type="text/javascript" src="./index.js"></script>
+
+    <!--[if lt IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
       <![endif]-->
-    </head>
+</head>
 
-    <body>
-        <div class="page-container flex">
-            <div class="ui inverted fixed menu navbar page grid">
-                <a href="#" class="brand item">Palate</a>
-                <div class="right menu">
-                    <a class="item first" href="recommendations.html">Recommendations</a>
-                    <a class="item" href="profile.html">My Palate</a>
-                    <a class="item" href="/">Log Out</a>
-                </div>
+<body>
+    <div class="page-container">
+        <div class="ui inverted fixed menu navbar page grid">
+            <a href="#" class="brand item">Palate</a>
+            <div class="right menu">
+                <a class="item first" href="recommendations.html">Recommendations</a>
+                <a class="item" href="profile.html">My Palate</a>
+                <a class="item" href="/">Log Out</a>
             </div>
         </div>
-    </body>
+        <!-- cards section -->
+        <div class="ui basic segment padded"></div>
+        <div class="ui basic container segment">
+            <div class="ui doubling four cards">
+                <!-- individual cards -->
+                <div class="card">
+                    <div class="image"><img src="./images/food/salmon.jpg"></div>
+                    <div class="content">
+                        <div class="header center aligned">Le Creme Salmon</div>
+                        <div class="meta center aligned">
+                            <div class="ui tiny divider"></div>
+                            <div class="ui basic tiny red label">Fish</div>
+                            <div class="ui basic tiny green label">Walking Distance</div>
+                            <div class="ui basic tiny blue label">17 Friends Like This</div>
+                            <div class="ui tiny divider"></div>
+                        </div>
+                        <div class="description center aligned">Grilled Gingered Salmon. A whole fillet of salmon is marinated in a sweet ginger and tangy garlic.</div>
+                        <div class="extra content">
+                            <div class="ui divider"></div>
+                            <div class="ui basic fluid green button" id="more">Learn More</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="image"><img src="./images/food/burger.jpg"></div>
+                    <div class="content">
+                        <div class="header center aligned">Epic Burger</div>
+                        <div class="meta center aligned">
+                            <div class="ui tiny divider"></div>
+                            <div class="ui basic tiny red label">Meat</div>
+                            <div class="ui basic tiny green label">Walking Distance</div>
+                            <div class="ui basic tiny blue label">5 Friends Like This</div>
+                            <div class="ui tiny divider"></div>
+                        </div>
+                        <div class="description center aligned">100% real beef patties that have no fillers, additives or preservatives are the foundation for every incredible hamburger.</div>
+                        <div class="extra content">
+                            <div class="ui divider"></div>
+                            <div class="ui basic fluid green button" id="more2">Learn More</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="image"><img src="./images/food/pasta.jpg"></div>
+                    <div class="content">
+                        <div class="header center aligned">Papa De Pasta Bollonga</div>
+                        <div class="meta center aligned">
+                            <div class="ui tiny divider"></div>
+                            <div class="ui basic tiny red label">Italian</div>
+                            <div class="ui basic tiny green label">Walking Distance</div>
+                            <div class="ui basic tiny blue label">92 Friends Like This</div>
+                            <div class="ui tiny divider"></div>
+                        </div>
+                        <div class="description center aligned">This incredible dish is a masterfully designed flavor bomb of pasta. Tomatoes, cheese, pasta and delicious herbs.</div>
+                        <div class="extra content">
+                            <div class="ui divider"></div>
+                            <div class="ui basic fluid green button" id="more3">Learn More</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="image"><img src="./images/food/steak.jpg"></div>
+                    <div class="content">
+                        <div class="header center aligned">Butter Garlic Sirloin Steak</div>
+                        <div class="meta center aligned">
+                            <div class="ui tiny divider"></div>
+                            <div class="ui basic tiny red label">Meat</div>
+                            <div class="ui basic tiny green label">Walking Distance</div>
+                            <div class="ui basic tiny blue label">2781 Friends Like This</div>
+                            <div class="ui tiny divider"></div>
+                        </div>
+                        <div class="description center aligned">Dry aged and chargrilled to your liking, served with herby garlic butter, freshly grated parmesan and...</div>
+                        <div class="extra content">
+                            <div class="ui divider"></div>
+                            <div class="ui basic fluid green button"  id="more4">Learn More</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="ui image card-image"><img src="./images/food/pizza.jpg"></div>
+                    <div class="content">
+                        <div class="header center aligned">Holy Moly Funghi Pizza</div>
+                        <div class="meta center aligned">
+                            <div class="ui tiny divider"></div>
+                            <div class="ui basic tiny red label">Pizza</div>
+                            <div class="ui basic tiny green label">Walking Distance</div>
+                            <div class="ui basic tiny blue label">259 Friends Like This</div>
+                            <div class="ui tiny divider"></div>
+                        </div>
+                        <div class="description center aligned">Porcini mushroom sauce, roasted herby mushrooms, Westcombe Jacks cheese, cracked black pepper and lemon zest</div>
+                        <div class="extra content">
+                            <div class="ui divider"></div>
+                            <div class="ui basic fluid green button">Learn More</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="image"><img src="./images/food/salmon.jpg"></div>
+                    <div class="content">
+                        <div class="header center aligned">Le Creme Salmon</div>
+                        <div class="meta center aligned">
+                            <div class="ui tiny divider"></div>
+                            <div class="ui basic tiny red label">Fish</div>
+                            <div class="ui basic tiny green label">Walking Distance</div>
+                            <div class="ui basic tiny blue label">17 Friends Like This</div>
+                            <div class="ui tiny divider"></div>
+                        </div>
+                        <div class="description center aligned">Grilled Gingered Salmon. A whole fillet of salmon is marinated in a sweet ginger and tangy garlic.</div>
+                        <div class="extra content">
+                            <div class="ui divider"></div>
+                            <div class="ui basic fluid green button">Learn More</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="image"><img src="./images/food/burger.jpg"></div>
+                    <div class="content">
+                        <div class="header center aligned">Epic Burger</div>
+                        <div class="meta center aligned">
+                            <div class="ui tiny divider"></div>
+                            <div class="ui basic tiny red label">Meat</div>
+                            <div class="ui basic tiny green label">Walking Distance</div>
+                            <div class="ui basic tiny blue label">5 Friends Like This</div>
+                            <div class="ui tiny divider"></div>
+                        </div>
+                        <div class="description center aligned">100% real beef patties that have no fillers, additives or preservatives are the foundation for every incredible hamburger.</div>
+                        <div class="extra content">
+                            <div class="ui divider"></div>
+                            <div class="ui basic fluid green button">Learn More</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="image"><img src="./images/food/pasta.jpg"></div>
+                    <div class="content">
+                        <div class="header center aligned">Papa De Pasta Bollonga</div>
+                        <div class="meta center aligned">
+                            <div class="ui tiny divider"></div>
+                            <div class="ui basic tiny red label">Italian</div>
+                            <div class="ui basic tiny green label">Walking Distance</div>
+                            <div class="ui basic tiny blue label">92 Friends Like This</div>
+                            <div class="ui tiny divider"></div>
+                        </div>
+                        <div class="description center aligned">This incredible dish is a masterfully designed flavor bomb of pasta. Tomatoes, cheese, pasta and delicious herbs.</div>
+                        <div class="extra content">
+                            <div class="ui divider"></div>
+                            <div class="ui basic fluid green button">Learn More</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="image"><img src="./images/food/steak.jpg"></div>
+                    <div class="content">
+                        <div class="header center aligned">Butter Garlic Sirloin Steak</div>
+                        <div class="meta center aligned">
+                            <div class="ui tiny divider"></div>
+                            <div class="ui basic tiny red label">Meat</div>
+                            <div class="ui basic tiny green label">Walking Distance</div>
+                            <div class="ui basic tiny blue label">2781 Friends Like This</div>
+                            <div class="ui tiny divider"></div>
+                        </div>
+                        <div class="description center aligned">Dry aged and chargrilled to your liking, served with herby garlic butter, freshly grated parmesan and...</div>
+                        <div class="extra content">
+                            <div class="ui divider"></div>
+                            <div class="ui basic fluid green button">Learn More</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="ui image card-image"><img src="./images/food/pizza.jpg"></div>
+                    <div class="content">
+                        <div class="header center aligned">Holy Moly Funghi Pizza</div>
+                        <div class="meta center aligned">
+                            <div class="ui tiny divider"></div>
+                            <div class="ui basic tiny red label">Pizza</div>
+                            <div class="ui basic tiny green label">Walking Distance</div>
+                            <div class="ui basic tiny blue label">259 Friends Like This</div>
+                            <div class="ui tiny divider"></div>
+                        </div>
+                        <div class="description center aligned">Porcini mushroom sauce, roasted herby mushrooms, Westcombe Jacks cheese, cracked black pepper and lemon zest</div>
+                        <div class="extra content">
+                            <div class="ui divider"></div>
+                            <div class="ui basic fluid green button">Learn More</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="image"><img src="./images/food/salmon.jpg"></div>
+                    <div class="content">
+                        <div class="header center aligned">Le Creme Salmon</div>
+                        <div class="meta center aligned">
+                            <div class="ui tiny divider"></div>
+                            <div class="ui basic tiny red label">Fish</div>
+                            <div class="ui basic tiny green label">Walking Distance</div>
+                            <div class="ui basic tiny blue label">17 Friends Like This</div>
+                            <div class="ui tiny divider"></div>
+                        </div>
+                        <div class="description center aligned">Grilled Gingered Salmon. A whole fillet of salmon is marinated in a sweet ginger and tangy garlic.</div>
+                        <div class="extra content">
+                            <div class="ui divider"></div>
+                            <div class="ui basic fluid green button">Learn More</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="image"><img src="./images/food/burger.jpg"></div>
+                    <div class="content">
+                        <div class="header center aligned">Epic Burger</div>
+                        <div class="meta center aligned">
+                            <div class="ui tiny divider"></div>
+                            <div class="ui basic tiny red label">Meat</div>
+                            <div class="ui basic tiny green label">Walking Distance</div>
+                            <div class="ui basic tiny blue label">5 Friends Like This</div>
+                            <div class="ui tiny divider"></div>
+                        </div>
+                        <div class="description center aligned">100% real beef patties that have no fillers, additives or preservatives are the foundation for every incredible hamburger.</div>
+                        <div class="extra content">
+                            <div class="ui divider"></div>
+                            <div class="ui basic fluid green button">Learn More</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="image"><img src="./images/food/pasta.jpg"></div>
+                    <div class="content">
+                        <div class="header center aligned">Papa De Pasta Bollonga</div>
+                        <div class="meta center aligned">
+                            <div class="ui tiny divider"></div>
+                            <div class="ui basic tiny red label">Italian</div>
+                            <div class="ui basic tiny green label">Walking Distance</div>
+                            <div class="ui basic tiny blue label">92 Friends Like This</div>
+                            <div class="ui tiny divider"></div>
+                        </div>
+                        <div class="description center aligned">This incredible dish is a masterfully designed flavor bomb of pasta. Tomatoes, cheese, pasta and delicious herbs.</div>
+                        <div class="extra content">
+                            <div class="ui divider"></div>
+                            <div class="ui basic fluid green button">Learn More</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="image"><img src="./images/food/steak.jpg"></div>
+                    <div class="content">
+                        <div class="header center aligned">Butter Garlic Sirloin Steak</div>
+                        <div class="meta center aligned">
+                            <div class="ui tiny divider"></div>
+                            <div class="ui basic tiny red label">Meat</div>
+                            <div class="ui basic tiny green label">Walking Distance</div>
+                            <div class="ui basic tiny blue label">2781 Friends Like This</div>
+                            <div class="ui tiny divider"></div>
+                        </div>
+                        <div class="description center aligned">Dry aged and chargrilled to your liking, served with herby garlic butter, freshly grated parmesan and...</div>
+                        <div class="extra content">
+                            <div class="ui divider"></div>
+                            <div class="ui basic fluid green button">Learn More</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="ui image card-image"><img src="./images/food/pizza.jpg"></div>
+                    <div class="content">
+                        <div class="header center aligned">Holy Moly Funghi Pizza</div>
+                        <div class="meta center aligned">
+                            <div class="ui tiny divider"></div>
+                            <div class="ui basic tiny red label">Pizza</div>
+                            <div class="ui basic tiny green label">Walking Distance</div>
+                            <div class="ui basic tiny blue label">259 Friends Like This</div>
+                            <div class="ui tiny divider"></div>
+                        </div>
+                        <div class="description center aligned">Porcini mushroom sauce, roasted herby mushrooms, Westcombe Jacks cheese, cracked black pepper and lemon zest</div>
+                        <div class="extra content">
+                            <div class="ui divider"></div>
+                            <div class="ui basic fluid green button">Learn More</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="ui modal">
+
+                    <div class="header">
+                        Epic Burger
+                    </div>
+                    <div class="image content">
+                        <div class="ui circular massive image">
+                            <img src="./images/food/burger.jpg">
+                        </div>
+                        <div class="description">
+                            <div class="ui header">The Best Burger</div>
+                            <p>In 2007 we opened the first Smashburger with one simple notion in mind: despite the overwhelming number of restaurants serving burgers, Americans were starving for something better. And we could deliver. Our vision is to connect
+                                with America’s passion for its favorite food on a local level and in a space where “Smashed Fresh, Served Delicious” means dedication to crafting the best-tasting burger around. Our smashed burgers are always made-to-order,
+                                never frozen, smashed and seared to perfection on our grill. Our menu is also kid-friendly, vegetarian-approved and topped off with frosty milkshakes.</p>
+                        </div>
+                    </div>
+                    <div class="actions">
+
+
+                        <div class="ui three center aligned cards">
+                            <div class="card">
+                                <div class="content">
+                                    <div class="header center aligned">Hours</div>
+                                    <div class="center aligned description">
+                                        <i class="big wait icon"></i>
+                                    </div>
+                                </div>
+                                <div class="ui bottom disabled attached button">
+                                    10AM-11:30PM
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="content">
+                                    <div class="header center aligned">Map</div>
+                                    <div class="center aligned description">
+                                        <i class="big map icon"></i>
+                                    </div>
+                                </div>
+                                <div class="ui bottom disabled attached button">
+                                    7 minutes
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="content">
+                                    <div class="header center aligned">Call</div>
+                                    <div class="center aligned description">
+                                        <i class="big call icon"></i>
+                                    </div>
+                                </div>
+                                <div class="ui bottom disabled attached button">
+                                    742-492-5918
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ui basic segment"></div>
+                        <div class="ui divider"></div>
+                        <div class="ui positive right labeled icon button">
+                            <i class="close icon"></i> Back
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
 </html>
