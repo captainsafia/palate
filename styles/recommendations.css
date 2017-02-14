@@ -6,3 +6,8 @@ p {
   font-size: 0.9em;
   color: grey;
 }
+
+.bg-container {
+  background: rgb(244, 245, 247);
+  min-height: 100%;
+}
