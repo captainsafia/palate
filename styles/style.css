@@ -58,3 +58,20 @@ h1 {
 .ui.four.cards>.card {
   width: calc(30% - 1em);
 }
+
+.facebook {
+    background-color: #3B5998;
+}
+
+.google-plus {
+    background-color: #DD4B39;
+}
+
+.twitter {
+    background-color: #55ACEE;
+}
+
+.register-button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
