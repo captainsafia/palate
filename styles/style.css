@@ -47,12 +47,8 @@ h1 {
     padding-left: 1rem;
 }
 
-.right.menu .first.item {
-    border-left: gray 3px solid;
-}
-
-.right.menu .item {
-    border-right: gray 3px solid;
+.navbar .brand {
+    font-size: 1.75em;
 }
 
 .ui.four.cards>.card {
