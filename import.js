@@ -4,7 +4,7 @@ window.onload = function() {
         .click(function() {
             $(this).addClass('ui disabled black button');
             $(this).text("Success. Sync more!");
-            $('rec-button').removeClass('disabled');
+            $('.rec-button').removeClass('disabled');
         });
 
 }
