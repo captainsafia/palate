@@ -8,6 +8,8 @@
     <meta name="Team Rocket">
     <link rel="stylesheet" href="./styles/semantic.min.css" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <script src="./assets/jquery.min.js"></script>
+    <script type="text/javascript" src="./import.js"></script>
     <!--[if lt IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
         <![endif]-->
@@ -22,9 +24,33 @@
                     To delivery yummy suggestions and determine your flavor palate,
                     we'll need some information about where you've eaten before.
                     Please import some data from one of the following services.
+
                 </h2>
-                <div class
+                <div class="ui basic segment">
+                    <div class="import-button">
+                        <button class="ui red button import-button">
+                    Sync with GrubHub
+                    </button>
+                    </div>
+                    <div class="import-button">
+                        <button class="ui blue button import-button">
+                    Sync with Postmates
+                    </button>
+                    </div>
+                    <div class="import-button">
+                        <button class="ui violet button import-button">
+                    Sync with DoorDash
+                    </button>
+                    </div>
+
+                    <div class="ui segment container basic center aligned">
+                    <a href="recommendations.html">
+                        <button class="ui fluid disabled green button rec-button">
+                    I'm all done. Show me recommendations!
+                    </button>
+                    </a>
                 </div>
+              </div>
             </div>
         </div>
     </div>
