@@ -81,3 +81,8 @@ h1 {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+.skip-text {
+  font-size: 0.8em;
+  color: white;
+}
