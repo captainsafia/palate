@@ -81,3 +81,11 @@ h1 {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
+.skip-button {
+  color: white;
+}
+
+.skip-button:hover {
+  color: grey;
+}
