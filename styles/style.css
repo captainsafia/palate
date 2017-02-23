@@ -82,7 +82,17 @@ h1 {
     padding-bottom: 10px;
 }
 
+<<<<<<< HEAD
 .skip-text {
   font-size: 0.8em;
   color: white;
 }
+=======
+.skip-button {
+  color: white;
+}
+
+.skip-button:hover {
+  color: grey;
+}
+>>>>>>> 700bb043d94bc822a4c84c1f9358112b9508eb17
