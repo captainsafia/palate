@@ -3,15 +3,18 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Palate</title>
+    <title>palATE</title>
     <meta name="description" content="Discover your flavors">
     <meta name="Team Rocket">
+        <link rel="stylesheet" href="./styles/range.css" />
     <link rel="stylesheet" href="./styles/semantic.min.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/recommendations.css" />
+
     <script src="./assets/jquery.min.js"></script>
     <script src="./assets/semantic.min.js"></script>
-    <script type="text/javascript" src="./index.js"></script>
+    <script src="https://tyleryasaka.github.io/semantic-ui-range/range.js"></script>
+    <script type="text/javascript" src="./assets/form.js"></script>
 
     <!--[if lt IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -21,11 +24,11 @@
 <body>
     <div class="bg-container">
         <div class="ui inverted fixed menu navbar page grid">
-            <a href="recommendations.html" class="brand item">Palate</a>
+            <a href="recommendations.html" class="brand item">palATE</a>
             <div class="right menu">
                 <a class="item first" href="addData.html">+ Add Food</a>
                 <a class="item first" href="recommendations.html">Recommendations</a>
-                <a class="item" href="profile.html">My Palate</a>
+                <a class="item" href="profile.html">My palATE</a>
                 <a class="item" href="index.html">Log Out</a>
             </div>
         </div>
@@ -69,8 +72,8 @@
                         </div>
                     </div>
                 </div>
-                <h4 class="ui dividing header">Best time of day</h4>
-                <div class="inline fields">
+                <h4 class="ui dividing header">Rate the dish from BLEH to YUM!</h4>
+                <!-- <div class="inline fields">
                     <div class="field">
                         <div class="ui checkbox">
                             <input type="checkbox" tabindex="0" class="hidden">
@@ -89,7 +92,11 @@
                             <label>Dinner</label>
                         </div>
                     </div>
+                </div> -->
+                <div class="ui segment">
+                    <div class="ui green range" id="range-1"></div>
                 </div>
+
                 <h4 class="ui dividing header">Date</h4>
                 <div class="field">
                     <input type="date" id="current-date" name="date">
