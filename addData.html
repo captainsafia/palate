@@ -54,9 +54,19 @@
                     history and keep your palate analysis up to date with your
                     eating habits!
                 </p>
-                <h4 class="ui dividing header">Dish Name</h4>
-                <div class="field">
-                    <input type="text" placeholder="Type here">
+                <div class="two fields">
+                    <div class="field">
+                        <h4 class="ui dividing header">Dish Name</h4>
+                        <div class="field">
+                            <input type="text" placeholder="Type here">
+                        </div>
+                    </div>
+                    <div class="field">
+                        <h4 class="ui dividing header">Date</h4>
+                        <div class="field">
+                            <input type="date" id="current-date" name="date">
+                        </div>
+                    </div>
                 </div>
                 <h4 class="ui dividing header">Select all Ingredients</h4>
                 <div class="field">
@@ -107,10 +117,6 @@
                     <div class="ui segment">
                         <div class="ui green range" id="range-1"></div>
                     </div>
-                </div>
-                <h4 class="ui dividing header">Date</h4>
-                <div class="field">
-                    <input type="date" id="current-date" name="date">
                 </div>
                 <input class="ui green button" type="button" value="Add Dish" id="btnsubmit" onclick="submitForm()">
 
