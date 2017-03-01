@@ -97,3 +97,7 @@ h1 {
 .recommendations-container .grid {
     padding-top: 15px;
 }
+
+.sort-by > a.item {
+    color: black !important;
+}
