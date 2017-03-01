@@ -41,8 +41,7 @@
         <div class="ui basic segment container">
             <!-- form starts here  -->
 
-            <form class="ui form" id="dishform">
-
+            <form class="ui form" id="dishform" onsubmit="return submitForm()">
                 <div class="ui success message">
                     <div class="header">Success!</div>
                     <p>Your dish has been added.</p>
@@ -118,7 +117,7 @@
                         <div class="ui green range" id="range-1"></div>
                     </div>
                 </div>
-                <input class="ui green button" type="button" value="Add Dish" id="btnsubmit" onclick="submitForm()">
+                <button class="ui green button" id="btnsubmit">Add Dish</button>
 
             </form>
         </div>
