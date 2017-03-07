@@ -1,7 +1,7 @@
 window.onload = function() {
   $('selection.dropdown').dropdown();
   $('.ui.dropdown').dropdown({allowAdditions: true});
-  $('.ui.checkbox').checkbox();
+  $('.ui.radio.checkbox').checkbox();
   if ($("#range-1").length > 0) {
       $('#range-1').range({min: 0, max: 10, start: 5});
   }
