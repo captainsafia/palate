@@ -101,3 +101,10 @@ h1 {
 .sort-by > a.item {
     color: black !important;
 }
+
+.flavor-by-time {
+    background: url('../images/6_FlavorsOverDay.png') no-repeat;
+    background-size: contain;
+    overflow: hidden;
+    height: 100%;
+}

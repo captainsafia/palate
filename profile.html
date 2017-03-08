@@ -27,13 +27,65 @@
                 <a class="item" href="index.html">Log Out</a>
             </div>
         </div>
-
-        <div class="ui basic segment"></div>
-        <div class="ui  basic segment">
-            <img class="ui fluid rounded image" src="images/Palate_4.png">
+        <div class="ui grid">
+            <div class="row">
+                <div class="six wide column">
+                    <img src="images/1_Profile.png"/>
+                </div>
+                <div class="six wide column">
+                    <img src="images/2_Calendar.png"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="six wide column">
+                    <div class="flavor-by-time">
+                        <div class="ui form">
+                            <div class="inline fields">
+                                <div class="field">
+                                    <div class="ui radio checkbox">
+                                        <input id="gen" type="radio" name="time" checked="" tabindex="0" class="hidden">
+                                        <label>General</label>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="ui radio checkbox">
+                                        <input id="morn" type="radio" name="time" tabindex="0" class="hidden">
+                                        <label>Morning</label>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="ui radio checkbox">
+                                        <input id="anoon" type="radio" name="time" tabindex="0" class="hidden">
+                                        <label>Afternoon</label>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="ui radio checkbox">
+                                        <input id="even" type="radio" name="time" tabindex="0" class="hidden">
+                                        <label>Evening</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="flavor-by-time-image">
+                                <img src="images/crop_genradar.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="six wide column">
+                    <img src="images/3_Map.png"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="twelve wide column">
+                    <img src="images/7_FlavorsOverTime.png"/>
+                </div>
+            </div>
         </div>
-
     </div>
+    <script src="./assets/jquery.min.js"></script>
+    <script src="./assets/semantic.min.js"></script>
+    <script type="text/javascript" src="assets/profile.js"></script>
 </body>
 
 </html>
