@@ -103,10 +103,16 @@ h1 {
 }
 
 #flavor-by-time {
-    background: url('../images/6_FlavorsOverDay.png') no-repeat;
+    background: url('../images/4_FlavorsOverDay.png') no-repeat;
     background-size: contain;
     overflow: hidden;
     height: 100%;
+    padding-top: 140px;
+    padding-left: 50px;
+}
+
+#flavor-by-time-image img {
+    width: 90%;
 }
 
 #flavor-by-day {
