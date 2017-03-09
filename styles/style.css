@@ -115,9 +115,26 @@ h1 {
     width: 90%;
 }
 
+#flavor-by-day-parent {
+    padding: 30px;
+}
+
 #flavor-by-day {
-    background: url('../images/7_FlavorsOverTime.png') no-repeat;
+    background: url('../images/5_FlavorsOverTime.png') no-repeat;
     background-size: contain;
     overflow: hidden;
     height: 100%;
+}
+
+#flavor-picker {
+    padding-top: 140px;
+    padding-left: 40px;
+}
+
+#flavor-by-day-image {
+    padding-top: 140px;
+}
+
+#flavor-by-day-image img {
+    height: 95%;
 }
